@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação com Matriz</title>
+</head>
+<body>
+
+    <script>
+
+        var matriz =
+        [
+            [1,2,3], //linha 1
+            [4,5,6], //linha 2
+            [7,8,9] // linha 3
+        ]
+
+        var multi = 1 // começa com 1 para não multiplicar por zero 
+
+        for(var l = 0; l < matriz.length; l++){
+
+            for(var c = 0; c < matriz[l].length; c++) {
+
+                let restoPorDois = matriz[l][c] % 2
+
+                if(restoPorDois == 0){
+                    multi = matriz[l][c] * multi
+                }
+
+            }
+        }
+
+        console.log(multi)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Pares</title>
+</head>
+<body>
+    <script>
+        let numeros = [2, 4, 6, 8, 10,];
+
+        let todosPares = numeros.every(numero => numero % 2 === 0);
+
+        if (todosPares) {
+            console.log("A lista possui apenas números pares.");
+        } else {
+            console.log("A lista não possui apenas números pares.");
+        }
+
+        console.log(numeros)
+    </script>
+</body>
+</html>

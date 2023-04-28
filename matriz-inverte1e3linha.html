@@ -1,0 +1,22 @@
+function trocaPrimeiraUltimaLinha(matriz) {
+    // Verifica se a matriz tem pelo menos duas linhas
+    if (matriz.length < 2) {
+      console.error("A matriz precisa ter pelo menos duas linhas.");
+      return matriz;
+    }
+  
+    // Troca a primeira e a última linha usando a desestruturação de array
+    [matriz[0], matriz[matriz.length - 1]] = [matriz[matriz.length - 1], matriz[0]];
+  
+    return matriz;
+  }
+  
+  // Exemplo de uso:
+  const matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ];
+  const matrizComLinhaTrocada = trocaPrimeiraUltimaLinha(matriz);
+  console.log(matrizComLinhaTrocada);
+  // Saída esperada: [[7, 8, 9], [4, 5, 6], [1, 2, 3]]  

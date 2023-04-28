@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação por N</title>
+</head>
+<body>
+    <script>
+
+        var n = 2
+        var matriz =
+        [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ]
+
+        var novaMatriz = []
+
+        for(var l = 0; l < matriz.length; l++){
+            novaMatriz[l] = [] 
+            for(var c = 0; c < matriz[l].length; c++){
+                novaMatriz[l].push(matriz[l][c] * n) 
+            }
+        }
+
+        console.log(novaMatriz)
+
+    </script>
+</html>
